@@ -1,17 +1,43 @@
-Dataset: 01_fund_master.csv
+# Mutual Fund Analytics Platform
 
-Shape: 40 rows × 15 columns
+Capstone Project – Bluestock Fintech Pvt. Ltd.
 
-Observations:
-- No missing values
-- AMFI code appears unique
-- Categories and risk classifications present
-- Suitable as master dimension table
+## Overview
 
-Dataset: 04_monthly_sip_inflows.csv
+A full-stack Mutual Fund Analytics Platform built using Python, Pandas, SQL, and Power BI.
 
-Issue:
-- Column yoy_growth_pct contains 12 missing values
+The project performs:
 
-Possible Reason:
-- First year records may not have a previous year available for YoY calculation.
+- Data ingestion and ETL
+- Mutual fund NAV analysis
+- Investor transaction analytics
+- Benchmark comparison
+- Risk and performance analysis
+- Interactive dashboards
+
+## Tech Stack
+
+- Python
+- Pandas
+- NumPy
+- SQLAlchemy
+- Requests
+- Matplotlib
+- Seaborn
+- Plotly
+- Jupyter Notebook
+
+## Project Structure
+
+```text
+data/
+├── raw/
+├── processed/
+
+reports/
+notebooks/
+sql/
+
+data_ingestion.py
+live_nav_fetch.py
+requirements.txt
